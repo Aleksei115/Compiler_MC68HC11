@@ -1,0 +1,26 @@
+01 : VACIO                     ********************************************                     
+02 : VACIO                     ********VARIABLES**********                     
+03 : VACIO                     ********************************************                     
+04 : VACIO                     COLUMNA EQU $45                     
+05 : VACIO                     MEMORIA EQU $1789                     
+06 : VACIO                     DDR5 EQU $17                        
+07 : VACIO                     LIST FCB 17,$16                     
+08 : VACIO                                                         
+09 : VACIO                                                         
+10 : VACIO                     ORG  $8000                          
+11 : VACIO                     ********************************************                     
+12 : VACIO                     ********DIRECCIONAMIENTO INMEDIATO**********                     
+13 : VACIO                     ********************************************                     
+14 : VACIO                                                         
+15 : VACIO                     ORG  $8000                          
+16 : 8000       B6             LDAA  LISTs      002   VARIABLE INEXISTENTE
+17 : 8001       F6 05 FB       LDAB 1531                           
+18 : 8004       FC 17 89       LDD $1789                           
+19 : 8007       FE FD E8       LDX 65000                           
+20 : 800A       BB 07 CB       ADDA $7CB                           
+21 : 800D       B4 F0 B1       ANDA $F0B1                          
+22 : 8010       18 FE AB CD    LDY $ABCD                           
+23 : 8014       27             BEQ FASTER       003   ETIQUETA INEXISTENTE
+24 : VACIO                                                         
+25 : VACIO                                                         
+26 : VACIO                     END                                 
